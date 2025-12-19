@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="Панель управления задачами">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Панель управления</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+<header>
+  <h1>Панель управления</h1>
+  <nav>
+    <a href="data.html">Просмотр данных</a>
+    <button id="logoutBtn">Выйти</button>
+  </nav>
+</header>
+
+<main>
+  <section aria-labelledby="add-task-title">
+    <h2 id="add-task-title">Добавить задачу</h2>
+
+    <form id="taskForm" novalidate>
+      <label>
+        Название задачи
+        <input type="text" id="title" required minlength="3">
+      </label>
+
+      <button type="submit">Добавить</button>
+    </form>
+
+    <p id="status" role="alert"></p>
+  </section>
+
+  <section aria-labelledby="list-title">
+    <h2 id="list-title">Мои задачи</h2>
+    <ul id="taskList"></ul>
+  </section>
+</main>
+
+<footer>
+  <small>Task Manager © 2025</small>
+</footer>
+
+<script type="module" src="js/dashboard.js"></script>
+</body>
+</html>

@@ -1,0 +1,11 @@
+services:
+  webapp:
+    build: .
+    container_name: webapp
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./public:/app/public
+    environment:
+      - NODE_ENV=production
+    restart: unless-stopped

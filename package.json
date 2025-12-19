@@ -1,0 +1,16 @@
+{
+  "name": "webapp",
+  "version": "1.0.0",
+  "description": "Web Application",
+  "main": "public/index.html",
+  "scripts": {
+    "start": "serve -s . -l 3000",
+    "dev": "serve -s . -l 3000"
+  },
+  "dependencies": {
+    "serve": "^14.0.0"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
