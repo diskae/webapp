@@ -5,3 +5,4 @@ npm-debug.log*
 firebase.js
 firebase-config.js
 firebase-credentials.json
+hash.js
